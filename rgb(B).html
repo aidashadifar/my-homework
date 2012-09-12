@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	table,td{
+    border:1px solid black; width:"500"; height:"500";margin-right:auto; margin-left:auto;
+	}
+	table{ height:500px; width:500px;
+	}
+	.a{
+	background-color:rgb(200,70,70);
+	} 
+	.b{
+	background-color:rgb(200,150,70);
+	}
+	.c{
+	background-color:rgb(200,200,70);
+	}
+	.d{
+	background-color:rgb(150,200,70);
+	}
+	.e{
+	background-color:rgb(70,200,70);
+	}
+	.f{
+	background-color:rgb(70,200,150);
+	}
+	.g{
+	background-color:rgb(70,200,200);
+	}
+	.h{ 
+	background-color:rgb(70,150,200);
+	}
+	.i{
+	background-color:rgb(70,70,200);
+	}
+	.j{
+	background-color:rgb(150,70,200);
+	}
+	.k{
+	background-color:rgb(200,70,200);
+	}
+	.l{
+	background-color:rgb(200,70,150);
+	}
+	.m{
+	background-color:rgb(200,70,70);
+	}
+	.n{
+	background-color:rgb(255,0,0);
+	}
+	.o{
+	background-color:rgb(255,150,0);
+	}
+	.p{
+	background-color:rgb(255,255,0);
+	}
+	.q
+	{background-color:rgb(150,255,0);
+	}
+	.r
+	{background-color:rgb(0,255,0);
+	}
+	.s
+	{background-color:rgb(0,255,150);
+	}
+	.t
+	{background-color:rgb(0,255,255);
+	}
+	.u
+	{background-color:rgb(0,150,255);
+	}
+	.v
+	{background-color:rgb(0,0,255);
+	}
+	.w
+	{background-color:rgb(150,0,255);
+	}
+	.x
+	{background-color:rgb(255,0,255);
+	}
+	.y
+	{background-color:rgb(255,0,150);
+	}
+	.z
+	{background-color:rgb(255,0,0);
+	}
+	.aa
+	{background-color:rgb(244,14,14);
+	}
+	.bb
+	{background-color:rgb(244,150,14);
+	}
+	.cc
+	{background-color:rgb(244,244,14);
+	}
+	.dd
+	{background-color:rgb(150,244,14);
+	}
+	.ee
+	{background-color:rgb(14,244,14);
+	}
+	.ff
+	{background-color:rgb(14,244,150);
+	}
+	.gg  
+	{background-color:rgb(14,244,244);
+	}
+	.hh
+	{background-color:rgb(14,150,244);
+	}
+	.ii
+	{background-color:rgb(14,14,244);
+	}
+	.jj
+	{background-color:rgb(150,14,244);
+	}
+	.kk
+	{background-color:rgb(244,14,244);
+	}
+	.ll
+	{background-color:rgb(244,14,150);
+	}
+	.mm
+	{background-color:rgb(244,14,14);
+	}
+	.nn
+	{background-color:rgb(233,28,28);
+	}
+	.oo 
+	{background-color:rgb(233,150,28);
+	}
+	.pp
+	{background-color:rgb(233,233,28);
+	}
+	.qq
+	{background-color:rgb(150,233,28);
+	}
+	.rr
+	{background-color:rgb(28,233,28);
+	}
+	.ss
+	{background-color:rgb(28,233,150);
+	}
+	.tt 
+	{background-color:rgb(28,233,233);
+	}
+	.uu
+	{background-color:rgb(28,150,233);
+	}
+	.vv
+	{background-color:rgb(28,28,233);
+	}
+	.ww
+	{background-color:rgb(150,23,233);
+	}
+	.xx 
+	{background-color:rgb(233,23,233);
+	}
+	.yy 
+	{background-color:rgb(233,23,150);
+	}
+	.zz
+	{background-color:rgb(233,23,23);
+	}
+	.aaa
+	{background-color:rgb(222,42,42);
+	}
+	.bbb
+	{background-color:rgb(222,150,42);
+	}
+	.ccc
+	{background-color:rgb(222,222,42);
+	}
+	.ddd
+	{background-color:rgb(150,222,42);
+	}
+	.eee
+	{background-color:rgb(42,222,42);
+	}
+	.fff
+	{background-color:rgb(42,222,150);
+	}
+	.ggg
+	{background-color:rgb(42,222,222);
+	}
+	.hhh
+	{background-color:rgb(42,150,222);
+	}
+	.iii
+	{background-color:rgb(42,42,222);
+	}
+	.jjj
+	{background-color:rgb(150,42,222);
+	}
+	.kkk 
+	{background-color:rgb(222,42,222);
+	}
+	.lll
+	{background-color:rgb(222,42,150);
+	}
+	.mmm
+	{background-color:rgb(222,42,42);
+	} 
+	.nnn
+	{background-color:rgb(211,56,56);
+	}
+	.ooo 
+	{background-color:rgb(211,150,56);
+	}
+	.ppp
+	{background-color:rgb(211,211,56);
+	}
+	.qqq
+	{background-color:rgb(150,211,56);
+	}
+	.rrr
+	{background-color:rgb(56,211,56);
+	}
+	.sss
+	{background-color:rgb(56,211,150);
+	}
+	.ttt 
+	{background-color:rgb(56,211,211);
+	}
+	.uuu
+	{background-color:rgb(56,150,211);
+	}
+	.vvv
+	{background-color:rgb(56,56,211);
+	}
+	.www
+	{background-color:rgb(150,56,211);
+	}
+	.xxx 
+	{background-color:rgb(211,56,211);
+	}
+	.yyy
+	{background-color:rgb(211,56,150);
+	}
+	.zzz
+	{background-color:rgb(211,56,56);
+	}
+	.aaaa
+	{background-color:rgb(189,84,84);
+	}
+	.bbbb
+	{background-color:rgb(189,150,84);
+	}
+	.cccc
+	{background-color:rgb(189,189,84);
+	}
+	.dddd
+	{background-color:rgb(150,189,84);
+	}
+	.eeee
+	{background-color:rgb(84,189,84);
+	}
+	.ffff
+	{background-color:rgb(84,189,150);
+	}
+	.gggg
+	{background-color:rgb(84,189,189);
+	}
+	.hhhh
+	{background-color:rgb(84,150,189);
+	}
+	.iiii
+	{background-color:rgb(84,84,189);
+	}
+	.jjjj
+	{background-color:rgb(150,84,189);
+	}
+	.kkkk 
+	{background-color:rgb(189,84,189);
+	}
+	.llll
+	{background-color:rgb(189,84,150);
+	}
+	.mmmm
+	{background-color:rgb(189,84,84);
+	} 
+	.nnnn
+	{background-color:rgb(178,98,98);
+	}
+	.oooo 
+	{background-color:rgb(178,150,98);
+	}
+	.pppp
+	{background-color:rgb(178,178,98);
+	}
+	.qqqq
+	{background-color:rgb(150,178,98);
+	}
+	.rrrr
+	{background-color:rgb(98,178,98);
+	}
+	.ssss
+	{background-color:rgb(98,178,150);
+	}
+	.tttt 
+	{background-color:rgb(98,178,178);
+	}
+	.uuuu
+	{background-color:rgb(98,150,178);
+	}
+	.vvvv
+	{background-color:rgb(98,98,178);
+	}
+	.wwww
+	{background-color:rgb(150,98,178);
+	}
+	.xxxx 
+	{background-color:rgb(178,98,178);
+	}
+	.yyyy 
+	{background-color:rgb(178,98,150);
+	}
+	.zzzz
+	{background-color:rgb(178,98,98);
+	}
+	.aaaaa{
+	background-color:rgb(167,112,112);
+	}	 
+	.bbbbb{
+	background-color:rgb(167,150,112);
+	}
+	.ccccc{
+	background-color:rgb(167,167,112);
+	}
+	.ddddd{
+	background-color:rgb(150,167,112);
+	}
+	.eeeee{
+	background-color:rgb(112,167,112);
+	}
+	.fffff{
+	background-color:rgb(112,167,150);
+	}
+	.ggggg{
+	background-color:rgb(112,167,167);
+	}
+	.hhhhh{ 
+	background-color:rgb(112,150,167);
+	}
+	.iiiii{
+	background-color:rgb(112,112,167);
+	}
+	.jjjjj{
+	background-color:rgb(150,112,167);
+	}
+	.kkkkk{
+	background-color:rgb(167,112,167);
+	}
+	.lllll{
+	background-color:rgb(167,112,150);
+	}
+	.mmmmm{
+	background-color:rgb(167,112,112);
+	}
+	.nnnnn{
+	background-color:rgb(156,126,126);
+	}
+	.ooooo{
+	background-color:rgb(156,150,126);
+	}
+	.ppppp
+	{background-color:rgb(156,156,126);
+	}
+	.qqqqq
+	{background-color:rgb(150,156,126);
+	}
+	.rrrrr
+	{background-color:rgb(126,156,126);
+	}
+	.sssss
+	{background-color:rgb(126,156,150);
+	}
+	.ttttt
+	{background-color:rgb(126,156,156);
+	}
+	.uuuuu
+	{background-color:rgb(126,150,156);
+	} 
+	.vvvvv
+	{background-color:rgb(126,126,156);
+	}
+	.wwwww
+	{background-color:rgb(150,126,156);
+	}
+	.xxxxx
+	{background-color:rgb(156,126,156);
+	}
+	.yyyyy
+	{background-color:rgb(156,126,156);
+	}
+	.zzzzz
+	{background-color:rgb(156,126,126);
+	}
+	.aaaaaa{
+	background-color:rgb(150,150,150);
+	} 
+	.bbbbbb{
+	background-color:rgb(150,150,150);
+	}
+	.cccccc{
+	background-color:rgb(150,150,150);
+	}
+	.dddddd{
+	background-color:rgb(150,150,150);
+	}
+	.eeeeee{
+	background-color:rgb(150,150,150);
+	}
+	.ffffff{
+	background-color:rgb(150,150,150);
+	}
+	.gggggg{
+	background-color:rgb(150,150,150);
+	}
+	.hhhhhh{ 
+	background-color:rgb(150,150,150);
+	}
+	.iiiiii{
+	background-color:rgb(150,150,150);
+	}
+	.jjjjjj{
+	background-color:rgb(150,150,150);
+	}
+	.kkkkkk{
+	background-color:rgb(150,150,150);
+	}
+	.llllll{
+	background-color:rgb(150,150,150);
+	}
+	.mmmmmm{
+	background-color:rgb(150,150,150);
+	}
+</style>			
+</head>
+<body>
+	<table>
+  <tr>
+   <td class="n"></td>
+   <td class="o"></td>
+   <td class="p"></td>
+   <td class="q"></td>
+   <td class="r"></td>
+   <td class="s"></td>
+   <td class="t"></td>
+   <td class="u"></td>
+   <td class="v"></td>
+   <td class="w"></td>
+   <td class="x"></td>
+   <td class="y"></td>
+   <td class="z"></td>
+  </tr>
+  <tr>
+   <td class="aa"></td>
+   <td class="bb"></td>
+   <td class="cc"></td>
+   <td class="dd"></td>
+   <td class="ee"></td>
+   <td class="ff"></td>
+   <td class="gg"></td>
+   <td class="hh"></td>
+   <td class="ii"></td>
+   <td class="jj"></td>
+   <td class="kk"></td>
+   <td class="ll"></td>
+   <td class="mm"></td>
+  </tr>
+  <tr>
+   <td class="nn"></td>
+   <td class="oo"></td>
+   <td class="pp"></td>
+   <td class="qq"></td>
+   <td class="rr"></td>
+   <td class="ss"></td>
+   <td class="tt"></td>
+   <td class="uu"></td>
+   <td class="vv"></td>
+   <td class="ww"></td>
+   <td class="xx"></td>
+   <td class="yy"></td>
+   <td class="zz"></td>
+  </tr>
+  <tr>
+   <td class="aaa"></td>
+   <td class="bbb"></td>
+   <td class="ccc"></td>
+   <td class="ddd"></td>
+   <td class="eee"></td>
+   <td class="fff"></td>
+   <td class="ggg"></td>
+   <td class="hhh"></td>
+   <td class="iii"></td>
+   <td class="jjj"></td>
+   <td class="kkk"></td>
+   <td class="lll"></td>
+   <td class="mmm"></td>
+  </tr>
+  <tr>
+   <td class="nnn"></td>
+   <td class="ooo"></td>
+   <td class="ppp"></td>
+   <td class="qqq"></td>
+   <td class="rrr"></td>
+   <td class="sss"></td>
+   <td class="ttt"></td>
+   <td class="uuu"></td>
+   <td class="vvv"></td>
+   <td class="www"></td>
+   <td class="xxx"></td>
+   <td class="yyy"></td>
+   <td class="zzz"></td>
+  </tr>
+  <tr>
+   <td class="a"></td>
+   <td class="b"></td>
+   <td class="c"></td>
+   <td class="d"></td>
+   <td class="e"></td>
+   <td class="f"></td>
+   <td class="g"></td>
+   <td class="h"></td>
+   <td class="i"></td>
+   <td class="j"></td>
+   <td class="k"></td>
+   <td class="l"></td>
+   <td class="m"></td>
+  </tr>
+  <tr>
+   <td class="aaaa"></td>
+   <td class="bbbb"></td>
+   <td class="cccc"></td>
+   <td class="dddd"></td>
+   <td class="eeee"></td>
+   <td class="ffff"></td>
+   <td class="gggg"></td>
+   <td class="hhhh"></td>
+   <td class="iiii"></td>
+   <td class="jjjj"></td>
+   <td class="kkkk"></td>
+   <td class="llll"></td>
+   <td class="mmmm"></td>
+  </tr>
+  <tr>
+   <td class="nnnn"></td>
+   <td class="oooo"></td>
+   <td class="pppp"></td>
+   <td class="qqqq"></td>
+   <td class="rrrr"></td>
+   <td class="ssss"></td>
+   <td class="tttt"></td>
+   <td class="uuuu"></td>
+   <td class="vvvv"></td>
+   <td class="wwww"></td>
+   <td class="xxxx"></td>
+   <td class="yyyy"></td>
+   <td class="zzzz"></td>
+  </tr>
+  <tr>
+   <td class="aaaaa"></td>
+   <td class="bbbbb" ></td>
+   <td class="ccccc"></td>
+   <td class="ddddd"></td>
+   <td class="eeeee"></td>
+   <td class="fffff"></td>
+   <td class="ggggg"></td>
+   <td class="hhhhh"></td>
+   <td class="iiiii"></td>
+   <td class="jjjjj"></td>
+   <td class="kkkkk"></td>
+   <td class="lllll"></td>
+   <td class="mmmmm"></td>
+  </tr>
+  <tr>
+   <td class="nnnnn"></td>
+   <td class="ooooo"></td>
+   <td class="ppppp"></td>
+   <td class="qqqqq"></td>
+   <td class="rrrrr"></td>
+   <td class="sssss"></td>
+   <td class="ttttt"></td>
+   <td class="uuuuu"></td>
+   <td class="vvvvv"></td>
+   <td class="wwwww"></td>
+   <td class="xxxxx"></td>
+   <td class="yyyyy"></td>
+   <td class="zzzzz"></td>
+  </tr>
+  <tr>
+   <td class="aaaaaa"></td>
+   <td class="bbbbbb"></td>
+   <td class="cccccc"></td>
+   <td class="dddddd"></td>
+   <td class="eeeeee"></td>
+   <td class="ffffff"></td>
+   <td class="gggggg"></td>
+   <td class="hhhhhh"></td>
+   <td class="iiiiii"></td>
+   <td class="jjjjjj"></td>
+   <td class="kkkkkk"></td>
+   <td class="llllll"></td>
+   <td class="mmmmmm"></td>
+  </tr>
+ </table> 
+</body>
+</html>
