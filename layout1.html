@@ -1,0 +1,111 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>my layout</title>
+<style type="text/css">
+<!--
+*{
+	padding: 0;
+	margin : 0;
+}
+div.container{
+	background-image  :url("backguid.jpg");
+	width             :950px;
+	margin            :0 auto;
+	background-reapet :none;
+
+}
+.badboy{
+	clear      :both;
+	width      :0 !important;
+	height     :0 !important;
+	min-height :0 !important;
+	min-width  :0 !important;
+	float      :none !important;
+	overflow   :hidden;
+}
+div.floor1,
+div.floor2,
+div.floor3{
+	margin-top     :10px;
+	padding-top    :1px;
+	padding-bottom :10px;
+
+
+}
+div.floor1 div.host1{
+	float         :left;
+	width         :380px;
+	min-height    :100px;
+	margin-top    :10px;
+	margin-left   :10px;
+	margin-bottom :10px;
+
+}
+div.floor1 div.host2{
+	float      :right;
+	width      :380px;
+	min-height :100px;
+	margin     :10px;
+}
+div.floor1 div.guest{
+	margin        :0 409px; 
+	min-height    :100px;
+	margin-top    :3px;
+	margin-bottom :10px;
+	height        :130px;
+}
+div.floor2 div.host1{
+	float      :left;
+	width      :445px;
+	min-height :467px;
+	margin     :11px;
+
+}
+div.floor2 div.guest{
+	margin-left  :516px;
+	min-height   :433px;
+	margin-top   :-20px;
+	margin-right :12px;
+
+}
+div.floor3 div.host1{
+	float        :left;
+	width        :270px;
+	min-height   :80px;
+	margin-right :5px;
+	margin-left  :340px;
+	margin-top   :10px;
+}
+
+div.floor3 div.guest{
+	margin-left  :152px;
+	min-height   :107px;
+	margin-right :148px;
+	margin-top   :90px;
+}
+-->
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="floor1">
+			<div class="host1"></div>
+			<div class="host2"></div>
+			<div class="guest"></div>
+			<div class="badboy"></div>
+		</div>
+		<div class="floor2">
+			<div class="host1"></div>
+			<div class="guest"></div>
+			<div class="badboy"></div>
+		</div>
+		<div class="floor3">
+			<div class="host1"></div>
+			<div class="guest"></div>
+			<div class="badboy"></div>
+		</div>
+	</div>
+</body>
+</html>
